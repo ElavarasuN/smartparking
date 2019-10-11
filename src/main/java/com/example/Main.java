@@ -12,7 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ 
 
 package com.example;
 
@@ -28,7 +28,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.spr ingframework.web.bind.annotation.RequestMapping;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -96,3 +96,4 @@ String hello(Map<String, Object> model) {
   }
 
 }
+*/
