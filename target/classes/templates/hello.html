@@ -1,7 +1,16 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <body>
  <p>elavarasu</p>
  <p>remo</p>
+=======
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'hello')}">
+<body>
+  <div class="container">
+    <p th:text="${science}"/>
+	<p>elavarasu</p>
+  </div>
+>>>>>>> 8ce4dc341ac56e3eea7e8ba82cf22a0f2e2ff8b0
 </body>
 </html>
