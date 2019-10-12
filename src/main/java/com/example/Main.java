@@ -56,6 +56,12 @@ public class Main {
   String index() {
     return "index";
   }
+  
+  @RequestMapping("/sample")
+  String sample() {
+    return "sample";
+  }
+  
 @RequestMapping("/hello")
 String hello(Map<String, Object> model) {
     RelativisticModel.select();
