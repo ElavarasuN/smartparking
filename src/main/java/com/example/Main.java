@@ -58,7 +58,9 @@ public class Main {
   }
   
   @RequestMapping("/sample")
-  String sample() {
+  String sample(Map<String, Object> model) {
+	String s=Just.data();
+	model.put("message",s);
     return "sample";
   }
   
