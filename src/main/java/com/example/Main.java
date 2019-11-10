@@ -52,23 +52,20 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
-  @RequestMapping("/")
+  @RequestMapping("/") 
   String index() {
     return "index";
   }
   
   @RequestMapping("/sample")
-  String sample(Map<String, Object> model) {
-	String s=Just.data();
-	model.put("message",s);
-    return "sample";
+  String sample()
+  {
+	return "sample";
   }
   
 @RequestMapping("/hello")
-String hello(Map<String, Object> model) {
-    RelativisticModel.select();
-    Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
-    model.put("science", "E=mc^2: 12 GeV = " + m.toString());
+String hello() {
+    
     return "hello";
 }
   @RequestMapping("/db")

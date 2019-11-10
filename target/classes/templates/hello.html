@@ -1,6 +1,12 @@
 <!DOCTYPE html>
+
 <html>
 <body>
- <a href="/sample">next page</a>
-</body>
-</html>
+		<p th:text="${message}"></p>
+       <form  action="save">    
+        <input name="username" type="text" placeholder="UserName" required>
+		<input name="password" type="password" placeholder="Password" required>
+		<input name="submit" type="submit">
+       </form>    
+	</body>
+	</html>
